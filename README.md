@@ -1,15 +1,14 @@
 ﻿# ViralAnime
 
-PARA EJECUTAR LA WEB
+**PARA EJECUTAR LA WEB
  
   - Importar la base de de datos
   - Ejecutar npm i
   - Ejecutar node app
  
- 
-BASE DE DATOS
+**BASE DE DATOS
 
--- Base de datos: `viralanime`
+--Base de datos: `viralanime`
 --
 
 -- --------------------------------------------------------
@@ -100,3 +99,4 @@ ALTER TABLE `commentsanime`
 --
 ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+
