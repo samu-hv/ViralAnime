@@ -1,7 +1,7 @@
 ﻿# ViralAnime
 
 -- PARA EJECUTAR LA WEB
- 
+--
   - Importar la base de de datos
   - Ejecutar npm i
   - Ejecutar node app
@@ -9,7 +9,7 @@
  -- --------------------------------------------------------
  
 -- BASE DE DATOS
-
+-
 * Base de datos: `viralanime`
 
 -- --------------------------------------------------------
