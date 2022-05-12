@@ -1,7 +1,6 @@
 ﻿# ViralAnime
 
 -- PARA EJECUTAR LA WEB
---
  
   - Importar la base de de datos
   - Ejecutar npm i
@@ -9,16 +8,15 @@
  
  -- --------------------------------------------------------
  
-**BASE DE DATOS
+-- BASE DE DATOS
 
---Base de datos: `viralanime`
---
+* Base de datos: `viralanime`
 
 -- --------------------------------------------------------
 
---
--- Estructura de tabla para la tabla `animelist`
---
+
+** Estructura de tabla para la tabla `animelist`
+
 
 CREATE TABLE `animelist` (
   `id` int(11) NOT NULL,
@@ -33,9 +31,9 @@ CREATE TABLE `animelist` (
 
 -- --------------------------------------------------------
 
---
--- Estructura de tabla para la tabla `commentsanime`
---
+
+** Estructura de tabla para la tabla `commentsanime`
+
 
 CREATE TABLE `commentsanime` (
   `id` int(11) NOT NULL,
@@ -46,9 +44,9 @@ CREATE TABLE `commentsanime` (
 
 -- --------------------------------------------------------
 
---
--- Estructura de tabla para la tabla `users`
---
+
+** Estructura de tabla para la tabla `users`
+
 
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
@@ -59,47 +57,47 @@ CREATE TABLE `users` (
   `date` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Índices para tablas volcadas
---
 
---
--- Indices de la tabla `animelist`
---
+* Índices para tablas volcadas
+
+
+
+** Indices de la tabla `animelist`
+
 ALTER TABLE `animelist`
   ADD PRIMARY KEY (`id`);
 
---
--- Indices de la tabla `commentsanime`
---
+
+** Indices de la tabla `commentsanime`
+
 ALTER TABLE `commentsanime`
   ADD PRIMARY KEY (`id`);
 
---
--- Indices de la tabla `users`
---
+
+** Indices de la tabla `users`
+
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
---
--- AUTO_INCREMENT de las tablas volcadas
---
 
---
--- AUTO_INCREMENT de la tabla `animelist`
---
+** AUTO_INCREMENT de las tablas volcadas
+
+
+
+** AUTO_INCREMENT de la tabla `animelist`
+
 ALTER TABLE `animelist`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
   
---
--- AUTO_INCREMENT de la tabla `commentsanime`
---
+
+** AUTO_INCREMENT de la tabla `commentsanime`
+
 ALTER TABLE `commentsanime`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 
---
--- AUTO_INCREMENT de la tabla `users`
---
+
+** AUTO_INCREMENT de la tabla `users`
+
 ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
