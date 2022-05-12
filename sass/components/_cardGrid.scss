@@ -1,0 +1,158 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 0fr);
+    gap: 4rem;
+    justify-content: center;
+    margin-top: 6rem;
+
+    &__shape {
+        width: 18.2rem;
+        height: auto;
+        box-shadow: 0 2rem 4rem rgba($color-black, .2);
+    }
+
+    &__header {
+        @include backgroundGradient;
+        border-radius: 1rem 1rem 0rem 0rem;
+        display: flex;
+
+        &__rank {
+            display: inline-block;
+            top: 0;
+            padding: 0.2rem 1.6rem;
+            font-size: 2rem;
+            font-weight: 600;
+            flex: 1 0 50%;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        &__score {
+            display: inline-block;
+            top: 0;
+            padding: 0.2rem 1.6rem;
+            font-size: 2rem;
+            font-weight: 600;
+            flex: 1 0 50%;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+    }
+
+    &__img {
+        max-width: 18.2rem;
+        max-height: 28rem;
+        min-height: 28rem;
+        cursor: pointer;
+    }
+
+    &__footer {
+        border-radius: 0rem 0rem 1rem 1rem;
+
+        &__title {
+            font-size: 1.6rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            padding-left: 1rem;
+        }
+
+        &__status {
+            margin-top: .5rem;
+            margin-left: .5rem;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+
+        &__id {
+            display: none;
+        }
+
+        &__icon {
+            margin-left: 1rem;
+            transform: translateY(5px);
+            @include iconEdit;
+            
+            &:hover {
+                transform: translateY(5px) rotate(360deg) ;
+            }
+        }
+    }
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    gap: 2rem;
+
+    &__prev {
+        font-size: 5rem;
+        cursor: pointer;
+    }
+
+    &__next {
+        font-size: 5rem;
+        cursor: pointer;
+    }
+
+    &__number {
+        font-size: 2.5rem;
+    }
+
+    &__span-disabled {
+        cursor: default;
+        color: $color-grey-dark-4;
+    }
+}
+
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    gap: 20rem;
+
+    &__title {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+        @include backgroundGradient;
+        color: transparent;
+        -webkit-background-clip: text;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    &__shape {
+        background-color: $color-black-light;
+        border-radius: 4rem;
+        height: 4rem;
+    }
+
+    &__input {
+        border: none;
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+        background-color: transparent;
+        color: $color-grey-light-1;
+        padding-left: 2rem;
+        transform: translateY(-1px);
+        width: 30rem;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__icon {
+        background-color: $color-grey-light-1;
+        padding: 0.3rem;
+        border-radius: 50%;
+        transform: translate(-5px, 4px);
+        cursor: pointer;
+        margin-left: 2rem;
+    }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viral Anime - Sign Up</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="Shortcut Icon" type="image/png" href="img/logo/logo-cut.png">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="page__bg">
+        <div class="circle__orange circle__orange-sp"></div>
+        <div class="circle__yellow circle__yellow-sp"></div>
+        <div class="form form-sp">
+            <a href="index.php">
+                <span class="material-icons icon__close">clear</span>
+            </a>
+            <span class="material-icons icon__arrow-down">south</span>
+            <div class="form__logo">
+                <a href="index.php">
+                    <img src="img/logo/logo-cut.png" alt="#" class="form__logo-img">
+                </a>
+            </div>
+            <h1 class="form__title">Sign Up</h1>
+            <form action="checkRegister.php" method="post">
+                <label for="username" class="form__label">Username</label>
+                <input type="text" name="username" class="form__input" placeholder="username">
+                <label for="email" class="form__label">Email</label>
+                <input type="email" name="email" class="form__input" placeholder="e-mail">
+                <label for="password" class="form__label">Password</label>
+                <input type="password" name="password" class="form__input" placeholder="password">
+                <label for="favoriteChar" class="form__label">Favorite Character</label>
+                <input type="text" name="favoriteChar" class="form__input form__input-fav" placeholder="choose one">
+                <input type="submit" name="signup" value="Sign Up" class="form__btn-log">
+                <p class="form__back">Already have an account? <a href="login.php" class="form__back-btn">Login</a></p>
+            </form>
+        </div>
+</body>
+</html>

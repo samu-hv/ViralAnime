@@ -1,0 +1,5 @@
+@keyframes turn {
+    &:hover {
+        transform: rotate(360deg);
+    }
+}

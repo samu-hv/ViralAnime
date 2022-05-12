@@ -1,0 +1,19 @@
+{
+  "name": "viralanime",
+  "version": "1.0.0",
+  "description": "ViralAnime",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Samuel",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "mysql": "^2.18.1"
+  }
+}

@@ -1,0 +1,94 @@
+.table {
+    font-size: 2rem;
+    width: 100%;
+    padding: 4rem;
+    table-layout: fixed;
+
+    &__header {
+        &-tr {
+            @include backgroundGradient;
+        }
+
+        &-th {
+            margin: 0rem 10rem;
+        }
+    }
+
+    &__th {
+        vertical-align: top;
+    }
+
+    &__card {
+        display: flex;
+        justify-content: center;
+        margin: 3rem 2rem;
+        gap: 3rem;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        min-width: 170px;
+
+        &__stats {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+        }
+    }
+
+    &__title {
+        width: 100%;
+        transition: all 4s;
+        letter-spacing: 1px;
+        font-size: 1.8rem;
+        overflow: hidden;
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        
+        &:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: $color-primary;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+
+        &:hover:after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+    }
+
+    &__img {
+        border-radius: 2rem;
+        opacity: 0.8;
+        max-width: 120px;
+        min-height: 176px;
+        max-height: 176px;
+    }
+
+    &__score {
+        font-size: 1.8rem;
+    }
+
+    &__idAnime {
+        display: none;
+    }
+
+    &__icon {
+        @include iconEdit;
+        
+        &:hover {
+            transform: translateY(5px) rotate(360deg) ;
+        }
+    }
+}

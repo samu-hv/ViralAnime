@@ -1,0 +1,38 @@
+.u-center-text { text-align: center;}
+
+
+.u-margin-bottom-small { margin-bottom: 1rem;}
+
+.u-margin-bottom-big { margin-bottom: 6rem; }
+
+.u-margin-bottom-huge { margin-bottom: 8rem; }
+
+.u-margin-bottom-medium { margin-bottom: 4rem; }
+
+.u-margin-bottom-medium-plus { margin-bottom: 5rem !important;}
+
+
+.u-padding-top-tiny { padding-top: 1.6rem; }
+
+.u-margin-top-big {margin-top: 8rem;}
+
+.u-margin-top-huge {margin-top: 8rem;}
+
+
+.u-margin-left-huge {margin-left: 44rem !important;}
+
+
+.icon__close {
+    position: absolute;
+    right: 4rem;
+    color: $color-white-bg;
+    font-size: 4rem !important;
+    transition: all .5s;
+
+    &:hover {
+        @include moveinTop;
+        box-shadow: none;
+    }
+}
+
+

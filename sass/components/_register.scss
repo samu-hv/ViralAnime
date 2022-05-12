@@ -1,0 +1,81 @@
+.circle {
+    &__orange-sp {
+        left: 62%;
+    }
+
+    &__yellow-sp {
+        left: 37.7%;
+    }
+}
+
+.form {
+    &-sp {
+        overflow-y: auto;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        &:hover .icon__arrow-down {
+            animation: rotate 1.8s linear 2;
+            
+        }
+    }
+
+    &__input {
+        &-fav {
+            margin-bottom: 5rem;
+        }
+    }
+
+    &__back {
+        display: block;
+        color: $color-white-bg;
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 2rem;
+
+        &-btn {
+            text-decoration: none;
+            color: $color-white-bg;
+            transition: all .5s;
+            letter-spacing: 1px;
+
+            &:hover {
+                text-decoration: underline;
+                color: $color-primary;
+            }
+        }
+    }
+}
+
+
+.icon__arrow {
+    &-down {
+        position: absolute;
+        right: 1.5rem;
+        color: $color-white-bg;
+        transform: translateY(55rem);
+        font-size: 3rem !important;
+        transition: all 1s;
+    }
+}
+
+
+@keyframes rotate {
+    0% {
+      top: 5%;
+    }
+    25% {
+      top: 0%;
+    }
+    50% {
+      top: -2%;
+    }
+    75% {
+      top: 0%;
+    }
+    100% {
+      top: 5%;
+    }
+  }

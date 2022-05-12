@@ -1,0 +1,165 @@
+.menu {
+    position: absolute;
+    font-size: 2rem;
+    display: flex;
+    right: 4rem;
+    padding: 3rem;
+    color: $color-black-light;
+    column-gap: 6rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    &__btn {
+
+        &-bg {
+            @include backgroundGradient;
+            z-index: 0;
+            width: 13rem;
+            height: 3.6rem;
+            position: absolute;
+            border-radius: 2rem;
+        }
+
+        &-login {
+            background-color: white;
+            color: $color-primary;
+            z-index: 10;
+            border-radius: 2rem;
+            text-align: center;
+            justify-content: center;
+            width: auto;
+            height: 3rem;
+            position: absolute;
+            left: 19.5%;
+            box-shadow: 0 2rem 4rem rgba($color-black, .2);
+            transform: translate(-50%, 10%);
+            position: relative;
+            align-items: center;
+            display: flex;
+            cursor: pointer;
+            text-decoration: none;
+            padding: 0rem 2.5rem;
+            overflow: hidden;
+            --hover: #f83600;
+            cursor: context-menu;
+
+            &:hover {
+                animation: pulse 2s;
+                box-shadow: 0em 0em 1.5em 1.5em transparent;
+            }
+        }
+
+        &-user {
+            background-color: white;
+            color: $color-primary;
+            z-index: 10;
+            border-radius: 2rem;
+            text-align: center;
+            justify-content: center;
+            width: auto;
+            height: 3rem;
+            position: absolute;
+            left: 21.5%;
+            box-shadow: 0 2rem 4rem rgba($color-black, .2);
+            transform: translate(-50%, 10%);
+            position: relative;
+            align-items: center;
+            display: flex;
+            text-decoration: none;
+            padding-left: 2rem;
+            overflow: hidden;
+            --hover: #f83600;
+
+            &:hover {
+                animation: pulse 2s;
+                box-shadow: 0em 0em 1.5em 1.5em transparent;
+            }
+
+            &:hover ~ .menu__btn-list {
+                @include dropdownMenuX(0.9rem, 5rem, .8s)
+            }
+
+            &:hover ~ .menu__btn-search {
+                @include dropdownMenuX(-0.4rem, 9rem, .4s)
+            }
+
+            &:hover ~ .menu__btn-blog {
+                @include dropdownMenuX(-1.5rem, 13rem, 0s)
+            }
+
+            &:hover ~ .menu__btn-list-2 {
+                @include dropdownMenuX(-56rem, .5rem, .8s)
+            }
+
+            &:hover ~ .menu__btn-search-2 {
+                @include dropdownMenuX(-40rem, .5rem, .4s)
+            }
+
+            &:hover ~ .menu__btn-blog-2 {
+                @include dropdownMenuX(-22rem, .5rem, 0s)
+            }
+
+            @keyframes pulse {
+                100% {
+                    box-shadow: 0 0 0 0 var(--hover);
+                }
+            }
+        }
+
+        &-register {
+            padding: 0rem 3rem;
+            background-image: linear-gradient(to right, $color-primary 30%, $color-secondary);
+            border-radius: 2rem;
+            display: flex;
+            align-items: center;
+            color: $color-grey-light-1;
+            cursor: pointer;
+            overflow: hidden;
+
+            -webkit-transition: ease-in-out 1s;
+            -o-transition: ease-in-out 1s;
+            transition: ease-in-out 1s;
+            text-decoration: none;
+
+            &:hover {
+                background-position: -14.9rem;
+            }
+
+            &-logout:hover {
+                background-position: -14.5rem;
+            }
+        }
+
+        &-list {
+            @include dropdownMenu(0.9rem, 0rem);
+
+            &-2 {
+                @include dropdownMenu(0rem, .5rem);
+            }
+        }
+
+        &-search {
+            @include dropdownMenu(-0.4rem, 0rem);
+
+            &-2 {
+                @include dropdownMenu(0rem, .5rem);
+            }
+        }
+
+        &-blog {
+            @include dropdownMenu(-1.5rem, 0rem);
+
+            &-2 {
+                @include dropdownMenu(0rem, .5rem);
+            }
+        }
+
+        &-arrow {
+            z-index: 30;
+            font-size: 3.5rem;
+            @include backgroundGradient;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+    }
+}

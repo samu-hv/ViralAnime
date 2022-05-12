@@ -1,0 +1,202 @@
+.container {
+    position: relative;
+}
+
+.card {
+
+    &__main {
+        color: $color-black;
+        width: 70rem;
+        height: 34rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        max-width: 77rem;
+        @include backgroundGradient;
+        -webkit-box-shadow: 0 0 40px $color-grey-dark-4; 
+        box-shadow: 0 0 40px $color-grey-dark-4;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 14%);
+        border-radius: 5px;
+        position: absolute;
+        opacity: 0;
+        transition: 200ms opacity ease-in-out;
+    }
+
+    &__left {
+        padding: 2rem 3rem 2rem 2rem;
+        flex: 1 0 70%;
+
+        &-title {
+            font-size: 2rem;
+            margin: 0rem 0rem 1.8rem;
+            letter-spacing: 2px;
+            font-weight: bold;
+            max-height: 3rem;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            display: -webkit-box;
+            overflow: hidden;
+            cursor: pointer;
+
+        }
+
+        &__info {
+            display: flex;
+            position: relative;
+            margin: 0rem 0rem 1.5rem;
+
+            &-flex {
+                flex: 1 0 21%;
+                margin: 1rem !important;
+                -webkit-box-shadow: 0 0 14px -4px $color-grey-dark-5; 
+                box-shadow: 0 0 14px -4px $color-grey-dark-5;
+
+                &:first-child {
+                    margin: 1rem 1rem 1rem 0rem !important;
+                }
+            }
+
+            &-icon {
+                padding-top: 1px;
+                position: absolute;
+            }
+
+            &-paragraph {
+                text-align: center;
+                font-size: 1.6rem;
+                padding-left: 2rem;
+
+                &-rank {
+                    padding-left: 2.8rem;
+                    padding-right: .5rem;
+                }
+
+                &-2 {
+                    text-align: center;
+                font-size: 1.6rem;
+                }
+            }
+            
+            &-rank {
+                font-size: 1.4rem;
+                background-color: #f9bd18;
+                border-radius: 2rem;
+                padding: 4px 8px;
+                flex: 0 1 auto;
+                overflow: hidden;
+            }
+            
+            &-score {
+                font-size: 1.4rem;
+                background-color: #f9bd18;
+                border-radius: 2rem;
+                padding: 4px 8px;
+                max-width: 8rem;
+            }
+
+            &-year {
+                font-size: 1.4rem;
+                background-color: #f9bd18;
+                border-radius: 2rem;
+                padding: 4px 8px;
+                max-width: 8rem;
+            }
+            
+            &-ep {
+                font-size: 1.4rem;
+                background-color: #f9bd18;
+                border-radius: 2rem;
+                padding: 4px 8px;
+                max-width: 9rem;
+            }
+            
+        }
+
+        &-synopsis {
+            font-size: 1.4rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            line-height: 24px;
+            max-height: 10rem;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            letter-spacing: 1px;
+            font-weight: 500;
+            margin: 0rem 0rem 1.5rem;
+        }
+    }
+
+    &__right {
+        flex: 1 0 30%;
+
+        &__bg {
+            @include backgroundGradient;
+            height: 34rem;
+            border-radius: 0px 5px 5px 0px;
+        }
+
+        &__img {
+            min-height: 340px;
+            max-height: 340px;
+            border-radius: 0px 5px 5px 0px;
+            opacity: 0.6;
+        }
+    }
+}
+
+.carousel-button {
+    position: relative;
+    z-index: 2;
+    background: none;
+    border: none;
+    font-size: 6rem;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    padding: 0 0rem;
+    margin-top: 21rem;
+}
+
+.carousel-button:hover {
+  font-size: 7rem;
+  transition: all .2s ease-in-out;
+}
+
+.next {
+    position: absolute;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.prev {
+    position: absolute;
+    left: 20%;
+    transform: translate(-50%, -50%);
+
+}
+
+.estado {
+    font-size: 1.4rem;
+}
+
+.card_id {
+    display: none;
+}
+
+form {
+    font-size: 1.4rem;
+
+}
+
+#radioStatus, #radioStatus1 {
+    margin: 0.5rem 1.5rem;
+}
+
+[data-active] {
+    opacity: 1;
+    z-index: 1;
+    transition-delay: 0ms;
+}

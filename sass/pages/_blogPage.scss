@@ -1,0 +1,115 @@
+.bodyStyle{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/logo/yuyuFondo2.png);
+    background-attachment: fixed;
+    background-blend-mode: luminosity;
+    background-size: cover;
+}
+// HEADER STYLES
+.headerJ {
+    background-image: url(../img/hero-img-2.jpg);
+    height: 10vh;
+    position: relative;
+    scroll-behavior: smooth;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.header__logoJ {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    max-height: 90px;
+}
+.background__heroJ {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 10vh;
+    position: absolute;
+}
+.menuJ {
+    position: relative;
+    font-size: 2rem;
+    display: flex;
+    /* right: 4rem; */
+    padding: 0rem;
+    color: #1a1a1a;
+    /* column-gap: 4rem; */
+    font-weight: bold;
+    letter-spacing: 1px;
+    /* height: auto; */
+    width: 55rem;
+    justify-content: space-around;
+}
+.menu__btn-loginJ {
+    background-color: white;
+    color: #f83600;
+    z-index: 10;
+    border-radius: 2rem;
+    text-align: center;
+    justify-content: center;
+    width: auto;
+    height: 3rem;
+    position: relative;
+    /* left: 21.5%; */
+    // box-shadow: 0 2rem 4rem rgb(0 0 0 / 20%);
+    /* transform: translate(-50%, 10%); */
+    position: relative;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    transition: all .5s;
+    text-decoration: none;
+    padding: 0rem 2rem;
+    overflow: hidden;
+}
+.menu__btn-registerJ {
+    padding: 0rem 4rem;
+    background-image: linear-gradient(to right, #f83600 30%, #f9d423);
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    color: #f7f7f7;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-transition: ease-in-out 1s;
+    -o-transition: ease-in-out 1s;
+    transition: ease-in-out 1s;
+    text-decoration: none;
+    position: relative;
+}
+.btnGoBack{
+    text-align: left;
+    text-decoration: none;
+    margin-left: 2rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    background-color: grey;
+    color: white;
+    border: solid 1px black;
+    border-radius: 6px;
+}
+// POST STYLES
+.blog__containerPost{
+    font-family: "Montserrat";
+    margin-top: 2rem;
+    margin-left: 30rem;
+    margin-right: 30rem;
+    margin-bottom: 2rem;
+}
+.postTitle{
+    font-size: 3rem;
+    color: beige;
+    text-align: center;
+}
+.containerPost--content{
+    font-size: 2rem;
+    color: beige;
+    text-align: justify;
+    margin-top: 3rem;
+    margin-bottom: 7rem;
+    letter-spacing: 3px;
+}
+.containerPost--content span{ // Background to make the content more readable
+    background-image: linear-gradient(rgba(0, 0, 0, 0.537), rgba(0, 0, 0, 0.469));
+}
