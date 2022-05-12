@@ -6,6 +6,8 @@
   - Ejecutar npm i
   - Ejecutar node app
  
+ -- --------------------------------------------------------
+ 
 **BASE DE DATOS
 
 --Base de datos: `viralanime`
