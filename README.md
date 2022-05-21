@@ -1,4 +1,6 @@
 ﻿# ViralAnime
+ 
+ Proyecto final del grado superior de Desarrollo de Apliaciones Web en el que realizo la conexión de una api con una base de datos en local, haciendo uso de nodeJS. 
 
 -- PARA EJECUTAR LA WEB
 --
